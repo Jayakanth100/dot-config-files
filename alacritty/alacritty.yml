@@ -1,0 +1,25 @@
+window:
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.5
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+env:
+  TERM: xterm-256color
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+
