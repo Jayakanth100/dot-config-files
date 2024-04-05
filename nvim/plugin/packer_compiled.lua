@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-save.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
+    url = "https://github.com/Pocco81/auto-save.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -95,7 +100,6 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -112,6 +116,19 @@ _G.packer_plugins = {
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["live-server.nvim"] = {
+    commands = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/opt/live-server.nvim",
+    url = "https://github.com/aurum77/live-server.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -122,20 +139,30 @@ _G.packer_plugins = {
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/nvimdev/lspsaga.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
-  ["mason-nvim-dap.nvim"] = {
-    loaded = true,
-    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/mason-nvim-dap.nvim",
-    url = "https://github.com/jay-babu/mason-nvim-dap.nvim"
-  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -146,16 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -182,11 +199,6 @@ _G.packer_plugins = {
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -201,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/home/tardigrade/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -235,6 +252,32 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'LiveServer', function(cmdargs)
+          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LiveServer ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'LiveServerStart', function(cmdargs)
+          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStart', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LiveServerStart ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'LiveServerStop', function(cmdargs)
+          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStop', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LiveServerStop ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
