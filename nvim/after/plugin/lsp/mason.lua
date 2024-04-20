@@ -16,3 +16,4 @@ mason_lspconfig.setup({
         lsp.default_setup,
     },
 })
+

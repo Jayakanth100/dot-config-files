@@ -59,13 +59,14 @@ return require('packer').startup(function(use)
     -- essential plugins
     use("tpope/vim-surround")               -- add, delete, change surroundings (it's awesome)
     use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-    use("EdenEast/nightfox.nvim")           -- Packer
     use {
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
         requires = { 'nvim-tree/nvim-web-devicons' }
     }
     -- Auto save plugin
-    use { "Pocco81/auto-save.nvim" }
     use { "lukas-reineke/indent-blankline.nvim" }
+    --color-themes
+    use("rose-pine/neovim")
 end)
+
