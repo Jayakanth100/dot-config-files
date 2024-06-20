@@ -16,7 +16,6 @@ return require('packer').startup(function(use)
     use("ThePrimeagen/harpoon")
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
-    use("nvim-tree/nvim-web-devicons")
 
     -- live server
     use({
@@ -26,7 +25,6 @@ return require('packer').startup(function(use)
         end,
         cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
     })
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -41,32 +39,22 @@ return require('packer').startup(function(use)
             { 'hrsh7th/cmp-nvim-lsp' },
             { 'L3MON4D3/LuaSnip' },
             { 'onsails/lspkind.nvim' },
-
         }
-
     }
     use { 'jose-elias-alvarez/null-ls.nvim' }
     use { 'MunifTanjim/prettier.nvim' } --prettier olugin for nvim
     use("nvimdev/lspsaga.nvim")
+    use("nvim-tree/nvim-tree.lua")
     use("saadparwaiz1/cmp_luasnip")
     use("rafamadriz/friendly-snippets")
-    use("nvim-tree/nvim-tree.lua")
     use("numToStr/Comment.nvim")
     use("windwp/nvim-autopairs")
     use("windwp/nvim-ts-autotag")
-    -- use ("AlexvZyl/nordic.nvim")
     use("christoomey/vim-tmux-navigator")
     -- essential plugins
     use("tpope/vim-surround")               -- add, delete, change surroundings (it's awesome)
     use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
-    use {
-        'nvimdev/dashboard-nvim',
-        event = 'VimEnter',
-        requires = { 'nvim-tree/nvim-web-devicons' }
-    }
-    -- Auto save plugin
-    use { "lukas-reineke/indent-blankline.nvim" }
     --color-themes
-    use("rose-pine/neovim")
+    use 'rmehri01/onenord.nvim'
 end)
 
