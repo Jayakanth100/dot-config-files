@@ -1,2 +1,0 @@
-# LSP-setup
-LSP configuration
